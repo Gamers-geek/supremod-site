@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Supremod - Site Officiel</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./content/css/style.css">
+        <script defer src="content/js/script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="header"></div>
+        </header>
+        <div class="content has-text-centered">
+          <h1>Signaler un bug</h1>
+          <p>Vous avez repéré un bug ? Signalez le !</p>
+          <form action="./breport.php" method="POST" class="form">
+            <input type="text" placeholder="Votre pseudo en jeu" class="input" name="username"><br>
+            <div class="select">
+              <select name="bug">
+                <option name="1">Sélectionner</option>
+                <option name="2">Bug en jeu</option>
+                <option name="3">Bug launcher</option>
+                <option name="4">Autre bug</option>
+                <option name="5">Bug mod</option>
+                <option name="6">Bug de duplication</option>
+              </select>&nbsp;
+            </div><br>
+            <input type="email" placeholder="Votre adresse mail" class="input" name="mail"><br>
+            <textarea placeholder="Contenu de votre signalement" class="input" name="report"></textarea><br>
+            <input type="submit" class="button" value="Signaler"><br>
+          </form>
+        </div>
+            <div id="footer"></div>
+    </body>
+</html>

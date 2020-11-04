@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Supremod - Site Officiel</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./content/css/style.css">
+        <script defer src="content/js/script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="header"></div>
+        </header>
+        <article class="message is-info" id="betaI">
+                <div class="message-header">
+                  Information
+                  <!--<button class="delete"></button>-->
+                </div>
+                <div class="message-body">
+                  Il vous est pour le moment possible que de vous créer un compte. Une fois votre compte créé, il vous sera impossible de vous y connecter depuis un autre appareil, ni de modifier les paramètres de celui-ci. Le compte servira exclusivement à vous connecter avec le <a href="download.html">launcher</a>. Il vous sera, par la suite, possible de vous connecter via le site pour modifier certains paramètre dans votre compte etc...
+                </div>
+              </article>
+
+              <form method="POST" action="./accountValidate.php" class="form">
+                <input type="text" placeholder="Pseudo" class="input" name="username"><br>
+                <input type="email" placeholder="Email" class="input" name="email"><br>
+                <input type="password" placeholder="Mot de passe" class="input" name="password"><br>
+                <input type="password" placeholder="Retapez votre mot de passe" class="input" name="retypePass">
+                <input type="submit" class="button" value="Créer mon compte"><br>
+              </form>
+        <div class="content has-text-centered">
+          <h1></h1>
+        </div>
+            <div id="footer"></div>
+    </body>
+</html>

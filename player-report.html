@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Supremod - Site Officiel</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./content/css/style.css">
+        <script defer src="content/js/script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="header"></div>
+        </header>
+        <div class="content has-text-centered">
+          <h1>Signaler un joueur</h1>
+          <p>Vous pensez qu'un joueur n'est pas très legit, qu'il doit être sanctionné ? Signalez le !</p>
+          <form action="./preport.php" method="POST" class="form">
+            <input type="text" placeholder="Votre pseudo en jeu" class="input" name="username"><br>
+            <input type="text" placeholder="Pseudo du joueur que vous signalez" class="input" name="rUsername"><br>
+            <input type="email" placeholder="Votre adresse mail" class="input" name="mail"><br>
+            <textarea placeholder="Pourquoi signalez vous ce joueur ?" class="input" name="report"></textarea><br>
+            <input type="submit" class="button" value="Signaler"><br>
+          </form>
+        </div>
+            <div id="footer"></div>
+    </body>
+</html>
