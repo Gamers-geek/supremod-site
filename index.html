@@ -69,7 +69,7 @@
                 <div class="level-item has-text-centered">
                   <div>
                     <p class="heading">Joueurs inscrits</p>
-                    <p class="title"><?php 
+                    <p class="title"><!--<?php 
                       try {
                         $bdd = new PDO('mysql:host=localhost;dbname=supremod;charset=utf8', 'supremod', '');
                       } catch (Exception $e) {
@@ -83,14 +83,14 @@
                         $user = $user + 1;
                       }
                       echo $user;
-                    ?>
+                    ?>-->100
                     </p>
                   </div>
                 </div>
                 <div class="level-item has-text-centered">
                   <div>
                     <p class="heading">Nombres de joueurs connectés simultanément</p>
-                    <p class="title"><?php 
+                    <p class="title"><!--<?php 
                       try {
                         $bdd = new PDO('mysql:host=localhost;dbname=supremod;charset=utf8', 'supremod', '');
                       } catch (Exception $e) {
@@ -104,14 +104,14 @@
                         $user = $response["maxPlayers"];
                       }
                       echo $user;
-                    ?>
+                    ?>--> 100
                     </p>
                   </div>
                 </div>
                 <div class="level-item has-text-centered">
                   <div>
                     <p class="heading">Nombres de membres sur Discord</p>
-                    <p class="title"><?php 
+                    <p class="title"><!--<?php 
                       try {
                         $bdd = new PDO('mysql:host=localhost;dbname=supremod;charset=utf8', 'supremod', '');
                       } catch (Exception $e) {
@@ -125,7 +125,7 @@
                         $user = $response["discord"];
                       }
                       echo $user;
-                    ?>
+                    ?>-->100
                     </p>
                   </div>
                 </div>
